@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "llm-static-analyzer"
+version = "0.1.0"
+description = "An LLM-Powered Static Code Analyzer for Python and SQL."
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.104.1"
+uvicorn = {extras = ["standard"], version = "^0.24.0"}
+sqlalchemy = "^2.0.23"
+alembic = "^1.13.0"
+pydantic = "^2.5.2"
+pydantic-settings = "^2.1.0"
+openai = "^1.3.7"
+matplotlib = "^3.8.2"
+plotly = "^5.18.0"
+python-dotenv = "^1.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.4.3"
+ruff = "^0.1.6"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
